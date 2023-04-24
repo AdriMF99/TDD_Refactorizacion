@@ -60,6 +60,21 @@ class ZappingTest {
         assertEquals(clicsEsperados, clicsObtenidos);
     }
 
+    @Test
+    public void testCambioDeCanalDe5a63() {
+        // Arrange
+        int canalOrigen = 5;
+        int canalDestino = 63;
+        int clicsEsperados = 41;
+
+        // Act
+        int clicsObtenidos = Zapping.cambioDeCanalOptimo(canalOrigen, canalDestino);
+
+        // Assert
+        assertEquals(clicsEsperados, clicsObtenidos);
+    }
+
+
 
 
 }
