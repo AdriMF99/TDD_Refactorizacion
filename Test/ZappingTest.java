@@ -75,11 +75,30 @@ class ZappingTest {
     }
 
     @Test
-    public void testCambioDeCanalOptimo() {
+    public void testCambioDeCanalDe63a5() {
+        // Arrange
         int canalOrigen = 63;
         int canalDestino = 5;
         int expectedDistanciaOptima = 41;
+
+        // Act
         int actualDistanciaOptima = Zapping.cambioDeCanalOptimo(canalOrigen, canalDestino);
+
+        // Assert
+        assertEquals(expectedDistanciaOptima, actualDistanciaOptima);
+    }
+
+    @Test
+    public void testCambioDeCanalDe1a51() {
+        // Arrange
+        int canalOrigen = 1;
+        int canalDestino = 51;
+        int expectedDistanciaOptima = 49;
+
+        // Act
+        int actualDistanciaOptima = Zapping.cambioDeCanalOptimo(canalOrigen, canalDestino);
+
+        // Assert
         assertEquals(expectedDistanciaOptima, actualDistanciaOptima);
     }
 
