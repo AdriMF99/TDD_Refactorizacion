@@ -74,6 +74,15 @@ class ZappingTest {
         assertEquals(clicsEsperados, clicsObtenidos);
     }
 
+    @Test
+    public void testCambioDeCanalOptimo() {
+        int canalOrigen = 63;
+        int canalDestino = 5;
+        int expectedDistanciaOptima = 41;
+        int actualDistanciaOptima = Zapping.cambioDeCanalOptimo(canalOrigen, canalDestino);
+        assertEquals(expectedDistanciaOptima, actualDistanciaOptima);
+    }
+
 
 
 
